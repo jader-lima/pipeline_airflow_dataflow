@@ -1,0 +1,10 @@
+#!/bin/bash
+sudo apt update
+sudo apt install python3 python3-venv
+python3 -m pip install --upgrade --force pip
+python3 -m venv env37
+source env37/bin/activate
+pip install wheel
+#pip install apache-beam[gcp]==2.15.0
+pip install apache-beam[gcp]==2.32.0
+
