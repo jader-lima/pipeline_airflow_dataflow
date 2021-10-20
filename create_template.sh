@@ -1,1 +1,8 @@
-python etl_olist_template.py --runner Dataflow --project dataengineering-324315 --region us-east1 --staging_location gs://olist_etl/staging --temp_location gs://olist_etl/temp --template_location gs://olist_etl/classic_template/etl_olist_template
+#!/bin/bash
+echo "runner $1"
+echo "project $2"
+echo "region $3"
+echo "staging_location $4"
+echo "temp_location $5"
+echo "template_location $6" 
+python etl_olist_template.py --runner $1 --project $2 --region $3 --staging_location $4 --temp_location $5 --template_location $6

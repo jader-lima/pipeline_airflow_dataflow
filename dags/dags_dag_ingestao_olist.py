@@ -25,7 +25,8 @@ default_args = {
     "start_date": days_ago(1),
     "email_on_failure":False,
     "email_on_retry":False,
-    "retries":0
+    "retries":0,
+    "scheduled_interval":"30 2 * * *"
 }
 
 dataflow_default_options = {
